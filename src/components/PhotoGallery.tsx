@@ -51,8 +51,8 @@ export default function PhotoGallery() {
       setTimeout(() => {
         setSlideIndex((prev) => (prev + 1) % filtered.length);
         setIsTransitioning(false);
-      }, 500);
-    }, 4000);
+      }, 400);
+    }, 2000);
     return () => clearInterval(timer);
   }, [isPaused, filtered.length]);
 
